@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Start a Project – HustlerDev Web Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="images/hustlerdev-logo.png" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/hustlerdev-logo.png" alt="HustlerDev logo" />
+                </div>
+                <div class="brand-box">
+                    <div class="brand">HustlerDev</div>
+                    <div class="sub">Web Agency</div>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html" class="active">Start a Project</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <h1>Tell Us About Your Business</h1>
+            <p>
+                Fill in the details below. When you submit, your info will open directly
+                in WhatsApp so we can chat and finish the quote there.
+            </p>
+        </section>
+
+        <section class="section">
+            <form id="project-form" class="form-card">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Your full name</label>
+                        <input type="text" id="name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="business">Business name (or idea name)</label>
+                        <input type="text" id="business" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="industry">What type of business is it?</label>
+                        <input type="text" id="industry" placeholder="e.g. hair salon, gadgets, fast food, tutoring"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pages">How many pages do you think you need?</label>
+                        <select id="pages">
+                            <option value="Not sure yet">Not sure – please advise</option>
+                            <option value="1 page">1 page (R350)</option>
+                            <option value="3 pages">3 pages (R500)</option>
+                            <option value="5 pages">5 pages (R800)</option>
+                            <option value="More than 5 pages">More than 5 pages</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget range (once-off)</label>
+                        <select id="budget">
+                            <option value="Not sure">Not sure</option>
+                            <option value="Under R500">Under R500</option>
+                            <option value="R500 – R1 000">R500 – R1 000</option>
+                            <option value="Above R1 000">Above R1 000</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="management">Do you want monthly management?</label>
+                        <select id="management">
+                            <option value="Not sure yet">Not sure yet</option>
+                            <option value="Basic (R150 / month)">Basic (R150 / month)</option>
+                            <option value="Standard (R250 / month)">Standard (R250 / month)</option>
+                            <option value="Business (R350 / month)">Business (R350 / month)</option>
+                            <option value="Premium (R500 / month)">Premium (R500 / month)</option>
+                            <option value="No monthly plan, just website">No, only once-off website</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">Your WhatsApp number</label>
+                        <input type="text" id="whatsapp" placeholder="e.g. 076 858 8689" />
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="details">
+                            Briefly describe your idea and what you want the website to do.
+                        </label>
+                        <textarea id="details" rows="5"
+                            placeholder="Example: I sell iPhones and I want people to see prices, colours and order on WhatsApp..."
+                            required></textarea>
+                    </div>
+                </div>
+
+                <p class="note">
+                    When you click “Send brief on WhatsApp”, a WhatsApp chat to HustlerDev
+                    will open with all this information filled in. You can review and send it.
+                </p>
+
+                <button type="submit" class="btn btn-primary">
+                    Send brief on WhatsApp
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 HustlerDev Web Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
